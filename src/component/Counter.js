@@ -14,17 +14,15 @@ class Counter extends Component {
   };
 
   decrement = () => {
-    this.setState((prevState) => ({
-      count: prevState.count > 0 ? prevState.count - 1 : 0, // Prevent negative values
-    }));
+    this.setState((prevState) => ({ count: prevState.count - 1 }));
   };
 
   render() {
     return (
-      <div className="counter-container">
+      <div>
         <h1>Count: {this.state.count}</h1>
-        <button onClick={this.increment} className="btn increment">➕ Increment</button>
-        <button className="btn decrement" onClick={handleDecrement}>  ➖ Decrease</button>
+        <button onClick={this.increment}>Increment</button>
+        <button onClick={this.decrement}>Decrement</button>
       </div>
     );
   }
