@@ -1,4 +1,3 @@
-
 import './App.css';
 import Counter from './component/Counter';
 
