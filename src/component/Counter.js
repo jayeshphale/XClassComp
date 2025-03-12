@@ -21,8 +21,8 @@ class Counter extends Component {
     return (
       <div>
         <h1>Count: {this.state.count}</h1>
-        <button onClick={this.increment}>Increment</button>
-        <button onClick={this.decrement}>Decrement</button>
+        <button onClick={this.increment}className="btn increment">➕ Increment</button>
+        <button onClick={this.decrement}className="btn decrement" disabled={count === 0}>➖Decrement</button>
       </div>
     );
   }
