@@ -1,35 +1,49 @@
+/* Styling for the counter container */
 .counter-container {
     text-align: center;
-    font-family: Arial, sans-serif;
-    margin-top: 20px;
+    margin-top: 50px;
   }
   
-  h1 {
+  /* Styling for the count display */
+  .counter-display {
     font-size: 2rem;
     color: #333;
+    margin-bottom: 20px;
   }
   
+  /* Common button styles */
   .btn {
-    margin: 10px;
-    padding: 10px 20px;
     font-size: 1rem;
-    cursor: pointer;
+    padding: 10px 20px;
+    margin: 5px;
     border: none;
     border-radius: 5px;
-    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    transition: all 0.3s ease;
   }
   
+  /* Increment button styling */
   .increment {
     background-color: #4caf50;
     color: white;
   }
   
+  .increment:hover {
+    background-color: #45a049;
+  }
+  
+  /* Decrement button styling */
   .decrement {
     background-color: #f44336;
     color: white;
   }
   
-  .btn:disabled {
+  .decrement:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Disabled button */
+  .decrement:disabled {
     background-color: #ccc;
     cursor: not-allowed;
   }
